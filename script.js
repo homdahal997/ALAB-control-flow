@@ -1,3 +1,5 @@
+// Part 1: Growing Pains
+
 // constants
 const gardenRadius = 5;
 const PI = 3.1415;
@@ -19,3 +21,21 @@ if (plantCountAfterWeek1 > 0.8 * maxNumberOfPlants){
     console.log("There is room for more plants.");
 }
 
+// After second week plants double
+let plantCountAfterWeek2 = plantCountAfterWeek1 * 2;
+if (plantCountAfterWeek2 > 0.8 * maxNumberOfPlants){
+    console.log("Please prun to prevent from exceding maximum capacity");
+}else if(plantCountAfterWeek2 <= 0.8 * maxNumberOfPlants && plantCountAfterWeek2 >= 0.5 * maxNumberOfPlants){
+    console.log("Monitor the growth of plants");
+}else{
+    console.log("There is room for more plants.");
+}
+// After First week plants double
+let plantCountAfterWeek3 = plantCountAfterWeek2 * 2;
+if (plantCountAfterWeek3 > 0.8 * maxNumberOfPlants){
+    console.log("Please prun to prevent from exceding maximum capacity");
+}else if(plantCountAfterWeek3 <= 0.8 * maxNumberOfPlants && plantCountAfterWeek3 >= 0.5 * maxNumberOfPlants){
+    console.log("Monitor the growth of plants");
+}else{
+    console.log("There is room for more plants.");
+}
