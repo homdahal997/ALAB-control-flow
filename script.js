@@ -23,7 +23,7 @@ if (plantCountAfterWeek1 > 0.8 * maxNumberOfPlants){
 }
 
 // After second week plants double
-let plantCountAfterWeek2 = startingPlantNumber * Math.pow(2,2);// this is double of week one- going exponent
+let plantCountAfterWeek2 = startingPlantNumber * Math.pow(2,2);// this is double of week one --> going exponent
 if (plantCountAfterWeek2 > 0.8 * maxNumberOfPlants){
     console.log("Please prun to prevent from exceding maximum capacity");
 }else if(plantCountAfterWeek2 <= 0.8 * maxNumberOfPlants && plantCountAfterWeek2 >= 0.5 * maxNumberOfPlants){
@@ -50,6 +50,7 @@ console.log("================= part 2. Thinking Bigger=======================")
 // If the space remained circular, what would be the radius of this expanded garden?
 startingPlantNumber = 100;
 let plantCountAfterWeek10 = startingPlantNumber * Math.pow(2, 10);
+//console.log(plantCountAfterWeek10);
 let gardenAreaRequired = plantCountAfterWeek10 * spaceForEachPlants;
 let additionalSpaceRequired = gardenAreaRequired - gardenArea // subtracting the initial area to find additional space
 let radiusRequired = Math.sqrt(gardenAreaRequired/PI);
