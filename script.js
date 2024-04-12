@@ -61,5 +61,11 @@ console.log("================= Part 3: Errors in Judgement======================
 // Use try and catch to wrap your work in an error-handling block. If the amount of space required to hold the originally provided number of plants exceeds the amount of space available, throw a new error and log an appropriate message.
 
 
-
+try{
+    if(gardenAreaRequired > gardenArea){
+        throw("The space required for plants is more thatn available garden area.");
+    }
+}catch(err){
+    console.log(err);
+}
 
