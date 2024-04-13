@@ -13,29 +13,32 @@ const maxNumberOfPlants = gardenArea/spaceForEachPlants;
 let startingPlantNumber = 20;
 
 // After First week plants double
+console.log(`=======WEEK 1 ========`)
 let plantCountAfterWeek1 = startingPlantNumber * Math.pow(2,1);// after first week it just doubles
 if (plantCountAfterWeek1 > 0.8 * maxNumberOfPlants){
     console.log("Please prun to prevent from exceding maximum capacity");
-}else if(plantCountAfterWeek1 <= 0.8 * maxNumberOfPlants && plantCountAfterWeek1 >= 0.5 * maxNumberOfPlants){
+}else if(plantCountAfterWeek1 >= 0.5 * maxNumberOfPlants && plantCountAfterWeek1 <= 0.8 * maxNumberOfPlants){
     console.log("Monitor the growth of plants");
 }else{
     console.log("There is room for more plants.");
 }
 
 // After second week plants double
+console.log(`=======WEEK 2 ========`)
 let plantCountAfterWeek2 = startingPlantNumber * Math.pow(2,2);// this is double of week one --> going exponent
 if (plantCountAfterWeek2 > 0.8 * maxNumberOfPlants){
     console.log("Please prun to prevent from exceding maximum capacity");
-}else if(plantCountAfterWeek2 <= 0.8 * maxNumberOfPlants && plantCountAfterWeek2 >= 0.5 * maxNumberOfPlants){
+}else if(plantCountAfterWeek2 >= 0.5 * maxNumberOfPlants && plantCountAfterWeek2 <= 0.8 * maxNumberOfPlants){
     console.log("Monitor the growth of plants");
 }else{
     console.log("There is room for more plants.");
 }
 // After Third week plants double
+console.log(`=======WEEK 3 ========`)
 let plantCountAfterWeek3 = startingPlantNumber * Math.pow(2,3);// again this will double that of week 2
 if (plantCountAfterWeek3 > 0.8 * maxNumberOfPlants){
     console.log("Please prun to prevent from exceding maximum capacity");
-}else if(plantCountAfterWeek3 <= 0.8 * maxNumberOfPlants && plantCountAfterWeek3 >= 0.5 * maxNumberOfPlants){
+}else if(plantCountAfterWeek3 >= 0.5 * maxNumberOfPlants && plantCountAfterWeek3 <= 0.8 * maxNumberOfPlants){
     console.log("Monitor the growth of plants");
 }else{
     console.log("There is room for more plants.");
